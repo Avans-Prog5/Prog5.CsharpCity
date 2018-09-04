@@ -18,5 +18,9 @@ namespace CsharpCity.Models
         {
             _key = new Key("Kluis sleutel");
         }
+        
+        public Key Key() {
+            return _key;
+        }
     }
 }
