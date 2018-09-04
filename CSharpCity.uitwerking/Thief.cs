@@ -32,7 +32,7 @@ namespace CsharpCity.Models
         //4. Er is 1 kluisje met daarin juwel die ultra veel waard zijn. Hoe kom je er achter welke?
         public void FindAndOpenSafe()
         {
-            bank.SafeList.OrderBy(s => s.Money).First().OpenSafe();
+            bank.SafeList.OrderBy(s => s.Money).Last().OpenSafe();
         }
 
     }
